@@ -1,4 +1,5 @@
 import React from "react";
+import "./Footer.css";
 import MotionWrap from "../wrapper/MotionWrap";
 import {
   BsGithub,
@@ -9,6 +10,32 @@ import {
 } from "react-icons/bs";
 
 const Footer = () => {
+  const cardsContent = [
+    {
+      front: "Backup/Restore",
+      back: "provides a convenient interface for backup and restore & provides backup and restore features for DB and table objects",
+    },
+    {
+      front: "DB Monitoring Dashboard",
+      back: "monitors real-time session & transaction lock provides status for server CPU & memory",
+    },
+    {
+      front: "Schedule Management",
+      back: "provides module for script, SQL job, and scheduling management && provides UX dedicated to scheduling",
+    },
+    {
+      front: "Database Audit",
+      back: " enables auditing via user interface & view audit results via user interface",
+    },
+    {
+      front: "SQL Monitoring",
+      back: "collects query statistics required for performance analysis & extracts monitoring results in query",
+    },
+    {
+      front: "Performance Management",
+      back: "monitors and collects operation status & statistical data & provides status reports required for improving performance",
+    },
+  ];
   return (
     <div className="mx-auto">
       <div>
@@ -33,38 +60,21 @@ const Footer = () => {
           <img
             src="https://bitnine.net/wp-content/uploads/2022/04/img_AHM_eng-1024x922.png"
             alt="agensHAmnager"
-            className="w-11/12"
           />
         </div>
         <section className="w-500 h-50 rounded-8 flex flex-col justify-center items-center">
           <h1 className="text-xl font-bold content-center">
             Agens Enterprise Manager
           </h1>
-          <div className="group [perspective:1000px]">
-            <div className="flex items-center rounded-md justify-center border-2 border-sky-600 bg-white text-sky-600 relative w-96 h-28 transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] mt-6">
-              Backup/Restore
-              <div className="absolute inset-0 rounded-md text-white bg-sky-600 px-4 py-2 [transform:rotateY(180deg)] [backface-visiblity:hidden]">
-                <p>provides a convenient interface for backup & restore</p>
-                <p>
-                  provides backup & restore features for DB and table objects
-                </p>
-              </div>
-            </div>
-            <div className="w-96 h-20 flex items-center justify-center rounded-md border-2 border-sky-600 text-sky-600 mt-4">
-              DB Monitoring Dashboard
-            </div>
-            <div className="w-96 h-20 flex items-center justify-center rounded-md border-2 border-sky-600 text-sky-600 mt-4">
-              Schedule Management
-            </div>
-            <div className="w-96 h-20 flex items-center justify-center rounded-md border-2 border-sky-600 text-sky-600 mt-4">
-              Database Audit
-            </div>
-            <div className="w-96 h-20 flex items-center justify-center rounded-md border-2 border-sky-600 text-sky-600 mt-4 ">
-              SQL Monitoring
-            </div>
-            <div className="w-96 h-20 flex items-center justify-center rounded-md border-2 border-sky-600 text-sky-600 mt-4">
-              Performance Management
-            </div>
+          <div className="cards-container">
+            {cardsContent.map((card) => {
+              return (
+                <div class="card">
+                  <div class="front">{card.front}</div>
+                  <div class="back">{card.back}</div>
+                </div>
+              );
+            })}
           </div>
         </section>
       </div>
