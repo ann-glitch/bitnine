@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea {
+  @apply w-full border my-2 py-2 px-3 rounded-2xl outline-none;
+}
+
+button {
+  @apply bg-gray-500;
+}
+
+button.primary {
+  /* background-color: #f7786b; */
+  @apply bg-primary p-2 w-full rounded-2xl text-white;
+}
+
+li {
+  @apply my-0 mx-4 cursor-pointer flex-col;
+}
+
+li.div {
+  @apply bg-yellow-500 w-1.5 h-1.5 rounded-3xl mb-1;
+}
+
+/* li.a {
+  @apply text-transparent;
+} */
