@@ -20,7 +20,7 @@ In this question, I was tasked with implementing a login/signup page that allows
   - **Technologies**: React.js, Tailwind CSS
   - **Files**: `/bitnine-website/client/src/App.js`, `/frontend/src/components`, `/client/src/pages`
   - **Description**: The frontend is developed using React.js and styled with Tailwind CSS. The main `App.js` file contains the routing logic. Separate components and pages are created for login, signup, and the content visible after login.
-  - You can find the live preview [here](https://bitnine-clone-ann-glitch.vercel.apps)
+  - You can find the live preview [here](https://bitnine-clone-ann-glitch.vercel.app)
 
 ### Question 6 - Basic Algorithms
 
