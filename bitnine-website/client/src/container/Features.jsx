@@ -17,7 +17,7 @@ const Features = () => {
       <img
         src="https://bitnine.net/wp-content/uploads/2022/04/img_key-features_eng.png"
         alt="keyfeatures"
-        className="mt-8"
+        className="mt-8 mx-auto w-full"
       />
     </div>
   );

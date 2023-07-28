@@ -10,7 +10,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full flex justify-between fixed top-0 left-0 bg-white z-2 bg-transparent text-gray-600">
+    <nav className="w-full flex justify-between fixed top-0 left-0 bg-white z-10000 bg-transparent text-gray-600">
       <Link to={"/"} className="flex items-center justify-start">
         <img
           src="https://mma.prnewswire.com/media/1504544/Bitnine_Logo.jpg?p=facebook"
