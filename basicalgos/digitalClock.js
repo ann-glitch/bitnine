@@ -1,3 +1,17 @@
+/*  Complete the following code to make a Javascript based digital clock.
+function myDigitalClock(){
+var d1 = new Date();
+var hours = date.getHours(); // 0 - 23
+var minutes = date.getMinutes(); // 0 - 59
+var seconds = date.getSeconds(); // 0 - 59
+var zone = "AM";
+//Write the code here
+//
+//
+}
+myDigitalClock();
+*/
+
 function myDigitalClock() {
   function updateClock() {
     var date = new Date();

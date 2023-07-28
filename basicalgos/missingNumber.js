@@ -1,3 +1,9 @@
+/* 
+Let's say we have an array of first 45 numbers with one missing number.
+Need to find a missing integer from the list
+(JavaScript)
+*/
+
 function findMissingNumber(arr) {
   arr.sort((a, b) => a - b); // Sort the array in ascending order
 
