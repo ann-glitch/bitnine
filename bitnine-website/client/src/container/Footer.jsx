@@ -69,9 +69,9 @@ const Footer = () => {
           <div className="cards-container">
             {cardsContent.map((card) => {
               return (
-                <div class="card">
-                  <div class="front">{card.front}</div>
-                  <div class="back">{card.back}</div>
+                <div className="card">
+                  <div className="front">{card.front}</div>
+                  <div className="back">{card.back}</div>
                 </div>
               );
             })}
